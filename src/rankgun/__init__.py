@@ -14,15 +14,15 @@ class Bot:
         self.Type = Type
 
     async def Promote(self, subject):
-     U = self.name
-     P = self.password
+     Rayane = self.name
+     Rayane10 = self.password
      T = self.Type
      url = f"{BaseUrl}/developer/{T}/promote"
      print(url)
      payload = {
          "subject": subject,
-         "username": U,
-         "password": P
+         "username": Rayane,
+         "password": Rayane10
      }
      response = requests.request("GET", url, params=payload)
      print(response.json())
